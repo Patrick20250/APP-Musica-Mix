@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activity.SignUpActivity">
+
+
+    <ImageView
+        android:id="@+id/image_SigUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/img_background_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/BtnVoltartelaIntro"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ico_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/irParaTelaDeLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/mais_tarde"
+        android:textColor="@color/lightgrayishcyan"
+        android:textSize="16sp"
+
+        android:textStyle="bold"
+
+
+        app:layout_constraintBottom_toBottomOf="@+id/BtnVoltartelaIntro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Text_Title_SigUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:text="@string/musicamix"
+        android:textColor="@color/white"
+        android:textSize="46sp"
+
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/BtnVoltartelaIntro" />
+
+    <TextView
+        android:id="@+id/text_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/nome"
+        android:textColor="@color/white"
+
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Text_Title_SigUp" />
+
+    <EditText
+        android:id="@+id/editHintNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/fundo_gradiente_transparente"
+        android:drawableEnd="@drawable/ico_check"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_nome" />
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/email"
+        android:textColor="@color/white"
+
+
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editHintNome" />
+
+
+    <EditText
+        android:id="@+id/editHintEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/fundo_gradiente_transparente"
+        android:drawableEnd="@drawable/ico_check"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_email" />
+
+    <TextView
+        android:id="@+id/text_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/senha"
+        android:textColor="@color/white"
+
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editHintEmail" />
+
+
+    <EditText
+        android:id="@+id/editHintSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/fundo_gradiente_transparente"
+        android:drawableEnd="@drawable/ico_check"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_senha" />
+
+    <TextView
+        android:id="@+id/text_caracters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        android:text="@string/deve_ter_pelomenos_8_caracteres"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@+id/editHintSenha"
+        app:layout_constraintTop_toBottomOf="@id/editHintSenha" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btninscreveseTelaSingUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+
+        android:background="@drawable/fundo_gradiente"
+        android:text="@string/insceva_se"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_caracters" />
+
+    <View
+        android:id="@+id/viewStart"
+        android:layout_width="130dp"
+        android:layout_height="1dp"
+
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+
+
+        app:layout_constraintTop_toBottomOf="@id/btninscreveseTelaSingUp"
+        app:layout_constraintStart_toStartOf="@id/btninscreveseTelaSingUp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/textou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/ou"
+        android:textColor="@color/white"
+
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+
+        app:layout_constraintBottom_toBottomOf="@id/viewStart"
+        app:layout_constraintEnd_toStartOf="@id/viewEnd"
+        app:layout_constraintStart_toEndOf="@+id/viewStart"
+        app:layout_constraintTop_toTopOf="@id/viewStart" />
+
+    <View
+        android:id="@+id/viewEnd"
+        android:layout_width="130dp"
+        android:layout_height="1dp"
+
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textou"
+        app:layout_constraintStart_toEndOf="@+id/textou"
+        app:layout_constraintTop_toTopOf="@+id/textou"
+        app:layout_constraintEnd_toEndOf="@id/btninscreveseTelaSingUp"/>
+
+
+
+    <TextView
+        android:id="@+id/entrarCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:text="@string/entrar_com"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="@id/viewEnd"
+        app:layout_constraintStart_toStartOf="@id/viewStart"
+        app:layout_constraintTop_toBottomOf="@id/textou" />
+
+    <LinearLayout
+        android:id="@+id/Linear_Pai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/entrarCom"
+        app:layout_constraintStart_toStartOf="@id/entrarCom"
+        app:layout_constraintTop_toBottomOf="@id/entrarCom">
+
+        <LinearLayout
+            android:id="@+id/linear_ico1"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+
+            android:background="@drawable/fundo_gradiente"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icoFace"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_face"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_ico2"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+
+            android:background="@drawable/fundo_gradiente"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/icoGmail"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_gmail"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+
+        android:text="@string/j_tem_uma_conta_conecte_se"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+
+        app:layout_constraintTop_toBottomOf="@id/Linear_Pai"
+        app:layout_constraintEnd_toEndOf="@id/Linear_Pai"
+        app:layout_constraintStart_toStartOf="@id/Linear_Pai"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

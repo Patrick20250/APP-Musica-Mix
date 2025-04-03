@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MusicaMix</string>
+    <string name="musicamix">MusicaMix</string>
+    <string name="descubra_uma_nova_experi_ncia_musical_com_o_musicamix_explore_playlists_exclusivas_encontre_suas_faixas_favoritas_e_crie_sua_pr_pria_trilha_sonora">Descubra uma nova experiência musical com o MusicaMix. 🌟 Explore playlists exclusivas, encontre suas faixas favoritas e crie sua própria trilha sonora. 🎶</string>
+    <string name="insceva_se">Inscreva-se</string>
+    <string name="entrar">Entrar</string>
+    <string name="mais_tarde">Mais Tarde</string>
+    <string name="nome">Nome</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="deve_ter_pelomenos_8_caracteres">Deve ter pelomenos 8 Caracteres!</string>
+    <string name="ou">OU</string>
+    <string name="entrar_com">Entrar com</string>
+    <string name="j_tem_uma_conta_conecte_se">Já tem uma conta? <font color="#EEA849">Conecte-se</font></string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

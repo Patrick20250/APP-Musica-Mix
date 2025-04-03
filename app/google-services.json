@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "473818994645",
+    "project_id": "musicamix-24755",
+    "storage_bucket": "musicamix-24755.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473818994645:android:8da5c63e414cf3662dcf5c",
+        "android_client_info": {
+          "package_name": "com.patrick.musicamix"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ1-x3B9ZrLkN-ZmbBpgw-HNqM_chFPlg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

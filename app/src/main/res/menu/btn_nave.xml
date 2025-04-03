@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:title="SobreMim"
+        android:id="@+id/sobremin"
+        android:icon="@drawable/ico_contacts"/>
+
+    <item
+        android:title="Certificações"
+        android:id="@+id/certicicacao"
+        android:icon="@drawable/ico_profile"/>
+
+    <item
+
+        android:id="@+id/BotaoHome"
+        android:title="Home"
+        android:icon="@drawable/selecaobotaonavigation"
+
+
+        />
+</menu>
