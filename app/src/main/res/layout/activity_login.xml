@@ -82,7 +82,7 @@
         android:id="@+id/text_caracters"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/deve_ter_pelomenos_8_caracteres"
+        android:text="@string/deve_ter_pelomenos_9_caracteres"
         android:textColor="@color/white"
         android:layout_marginTop="8dp"
 

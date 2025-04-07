@@ -8,7 +8,7 @@
     <string name="nome">Nome</string>
     <string name="email">Email</string>
     <string name="senha">Senha</string>
-    <string name="deve_ter_pelomenos_8_caracteres">Deve ter pelomenos 8 Caracteres!</string>
+    <string name="deve_ter_pelomenos_9_caracteres">Deve ter pelomenos 9 Caracteres!</string>
     <string name="ou">OU</string>
     <string name="entrar_com">Entrar com</string>
     <string name="j_tem_uma_conta_conecte_se">Já tem uma conta? <font color="#EEA849">Conecte-se</font></string>

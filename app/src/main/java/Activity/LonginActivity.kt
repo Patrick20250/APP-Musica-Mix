@@ -28,16 +28,12 @@ class LoginActivity : AppCompatActivity() {
 
             if (email.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
+
 
             } else {
-                loginViewModel.login(email, password)
+                loginViewModel.login(email,password)
+
             }
-
-            val intent = Intent(this, DashboardActivity::class.java)
-            startActivity(intent)
-            finish()
-
 
         }
         binding.botaoVoltarTelaDeIntro.setOnClickListener{
@@ -47,9 +43,22 @@ class LoginActivity : AppCompatActivity() {
             finish()
 
         }
+        loginViewModel.loginStatus.observe (this){
+            status ->
+            Toast.makeText(this, status, Toast.LENGTH_SHORT).show()
+        }
+
+       loginViewModel.navigateHome.observe(this){
+           navigate ->
+           if(navigate){
+               val intent = Intent(this, DashboardActivity::class.java)
+               startActivity(intent)
+               finish()
+               loginViewModel.resetNavigateHome()
+           }
+       }
+
     }
-
-
     fun resetNavigateHome(view: View) { // Declaração da função navigateToSignIn
         startActivity(Intent(this, SignUpActivity::class.java)) // Inicia a SignInActivity
     }

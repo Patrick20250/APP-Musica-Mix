@@ -22,6 +22,9 @@ class SignInViewModel : ViewModel() {
         if(nome.isBlank() || email.isBlank() || password.isBlank() ){
             _signUpStatus .value="Preencha todos os campos. Todos são obrigatórios."
             return
+        }else if(password < 8.toString()){
+            _signUpStatus.value = "Senha tem que ser maior que 8 caracteres"
+
         }
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener { task ->

@@ -64,21 +64,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/BtnVoltartelaIntro" />
 
-    <TextView
-        android:id="@+id/text_nome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
 
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/nome"
-        android:textColor="@color/white"
-
-        android:textSize="16sp"
-        android:textStyle="bold"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Text_Title_SigUp" />
 
     <EditText
         android:id="@+id/editHintNome"
@@ -87,33 +73,21 @@
 
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:hint="@string/nome"
         android:background="@drawable/fundo_gradiente_transparente"
-        android:drawableEnd="@drawable/ico_check"
+        android:drawableEnd="@null"
         android:inputType="textPersonName"
+        android:layout_marginTop="30dp"
+        android:paddingStart="20dp"
         android:padding="10dp"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/lightgrayishcyan"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_nome" />
-
-    <TextView
-        android:id="@+id/text_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/email"
-        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/Text_Title_SigUp"
+        />
 
 
-        android:textSize="16sp"
-        android:textStyle="bold"
-
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editHintNome" />
 
 
     <EditText
@@ -121,31 +95,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
+        android:layout_marginTop="10dp"
+
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+
         android:background="@drawable/fundo_gradiente_transparente"
-        android:drawableEnd="@drawable/ico_check"
+        android:drawableEnd="@null"
         android:inputType="textEmailAddress"
         android:padding="10dp"
+
+        android:hint="Email"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_email" />
+        app:layout_constraintTop_toBottomOf="@id/editHintNome" />
 
-    <TextView
-        android:id="@+id/text_senha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
 
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/senha"
-        android:textColor="@color/white"
-
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editHintEmail" />
 
 
     <EditText
@@ -153,16 +119,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
+        android:hint="Senha"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/fundo_gradiente_transparente"
-        android:drawableEnd="@drawable/ico_check"
+        android:drawableEnd="@null"
         android:inputType="textPassword"
         android:padding="10dp"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_senha" />
+        app:layout_constraintTop_toBottomOf="@id/editHintEmail" />
 
     <TextView
         android:id="@+id/text_caracters"
@@ -170,7 +138,7 @@
         android:layout_height="wrap_content"
 
         android:layout_marginTop="8dp"
-        android:text="@string/deve_ter_pelomenos_8_caracteres"
+        android:text="@string/deve_ter_pelomenos_9_caracteres"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -200,7 +168,7 @@
         android:layout_width="130dp"
         android:layout_height="1dp"
 
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:background="@color/white"
 
 
@@ -247,7 +215,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:text="@string/entrar_com"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -260,7 +228,7 @@
         android:id="@+id/Linear_Pai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="@id/entrarCom"
         app:layout_constraintStart_toStartOf="@id/entrarCom"
@@ -313,6 +281,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/texotIrparatelaDeLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
