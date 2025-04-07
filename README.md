@@ -1,10 +1,12 @@
 # Portifolios
 Projetos criados em Kotlin
+
 # Button Navigation
 ![WhatsApp Image 2025-04-01 at 17 54 31](https://github.com/user-attachments/assets/47c9eb5a-a7a4-4f32-86d2-bfa508f6101f)
 ****
 # SiginUp
 ![WhatsApp Image 2025-04-01 at 17 53 18](https://github.com/user-attachments/assets/65ad963b-d4f6-4738-8602-c608e222edd0)
+melhorei a logica de criação de login, coloquei ico check quanndo o usuario colocar seu nome e senha correto um icone aparecerar verde
 ****
 # Login
 ![WhatsApp Image 2025-04-01 at 17 52 45](https://github.com/user-attachments/assets/9ccdda86-ad4c-4f68-8e1b-4b1d5f4e665f)
